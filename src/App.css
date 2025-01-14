@@ -1,0 +1,247 @@
+/* Global body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Architects Daughter", serif;
+  font-weight: 800;
+  font-style: normal;
+  background: #121212;
+  color: #ffffff;
+  overflow-y: scroll;
+}
+
+/* Top bar with FamX World and BackupFamX */
+.top-bar {
+  /* display: flex;
+  justify-content:flex-start; */
+  padding: 50px 50px;
+  position:relative;
+  /* top: 0;
+  left: 0;
+  right: 10;
+  z-index: 10;
+  width: 100%; */
+}
+
+.famx-world {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform:initial;
+}
+
+.backup {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fefefea5;
+  cursor: pointer;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
+.backup a {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+/* Pricing page container */
+.pricing-page {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Content container (Pricing Cards) */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 80px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Pricing card styling */
+.pricing-card {
+  background: #1e1e1e;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background: #ffffff;
+  margin: 0 auto 20px auto;
+}
+
+.price {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.tick {
+  color: #4caf50;
+}
+
+/* Animated button styling */
+.animated-button {
+  background: linear-gradient(45deg, #ff0202, #f80101);
+  color: #ffffff;
+  border: 5px;
+  padding: 10px 20px;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for button */
+.animated-button:hover {
+  transform: scale(1.5);
+  box-shadow: 2px 4px 15px rgb(21, 1, 249);
+}
+
+/* Active effect for button */
+.animated-button:active {
+  transform: scale(4);
+  box-shadow: 10px 4px 10px rgb(162, 255, 8);
+}
+
+/* Make the video cover the entire background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the screen */
+  z-index: -1;
+  opacity: 100%;
+}
+
+/* Responsive styles */
+
+/* Mobile (Phones) */
+@media (max-width: 600px) {
+  .famx-world {
+    font-size: 2rem;
+  }
+
+  .backup {
+    font-size: 1.2rem;
+  }
+
+  .pricing-card {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .features li {
+    font-size: 0.9rem;
+  }
+
+  .animated-button {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets and Medium devices */
+@media (max-width: 900px) {
+  .famx-world {
+    font-size: 3rem;
+  }
+
+  .backup {
+    font-size: 1.5rem;
+  }
+
+  .pricing-card {
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  .features li {
+    font-size: 1.1rem;
+  }
+
+  .animated-button {
+    font-size: 1.1rem;
+  }
+}
+
+/* Larger Screen (Laptop and Desktop) */
+@media (min-width: 901px) {
+  .famx-world {
+    font-size: 4rem;
+  }
+
+  .backup {
+    font-size: 1.8rem;
+  }
+
+  .pricing-card {
+    max-width: 350px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .features li {
+    font-size: 1.2rem;
+  }
+
+  .animated-button {
+    font-size: 1.3rem;
+  }
+}
